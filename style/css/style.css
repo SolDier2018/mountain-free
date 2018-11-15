@@ -79,6 +79,12 @@ header {
       }
     }
     @media (max-width: 400px) {
+      .burger_menu span .menu {
+        left: -180px;
+        width: 345px;
+      }
+    }
+    @media (max-width: 374px) {
         .burger_menu span .menu {
             left: -130px;
             width: 300px;
