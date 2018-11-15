@@ -1,0 +1,1432 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Pacifico')
+body
+  margin: 0
+  padding: 0
+  font-family: "Calibri"
+
+header
+  display: flex
+  justify-content: space-between
+  padding: 27px 75px 0 72px
+  background: transparent
+  @media screen and (max-width: 480px)
+    padding: 30px 30px 0 30px
+  .head_logo
+    img
+      width: 100%
+    @media (max-width: 480px)
+      width: 70%
+
+
+.burger_menu
+  width: 34px
+  height: 20px
+  position: relative
+  display: flex
+  align-items: center
+  cursor: pointer
+  margin-right: 250px
+  @media screen and (max-width: 990px)
+    margin-right: 0
+  span
+    display: block
+    width: 34px
+    height: 3px
+    background-color: #2d384b
+    .menu
+      display: none
+      list-style-type: none
+      padding: 0
+      margin: -9px 0 0 0
+      width: 167px
+      background: #cbdae2
+      border-top: 3px solid #2d384b
+      position: relative
+      z-index: 1
+      @media screen and (max-width: 990px)
+        margin: -9px 0px 0 -131px
+
+      li
+        font-family: Calibri
+        font-size: 18px
+        color: #2d384b
+        text-transform: uppercase
+        margin-top: 10px
+        margin-bottom: 10px
+        text-align: center
+        transition: .4s
+      li:hover
+        color: #35a8f0
+
+  span::after
+    content: ''
+    display: block
+    width: 34px
+    height: 3px
+    background-color: #2d384b
+    position: absolute
+    top: 0
+  span::before
+    content: ''
+    display: block
+    width: 34px
+    height: 3px
+    background-color: #2d384b
+    position: absolute
+    bottom: 0
+.social_info
+  text-align: right
+  color: #2d384b
+  @media screen and (max-width: 990px)
+    display: none
+  .head_num
+    font-family: Calibri
+    font-size: 21px
+  .head_title
+    font-family: Calibri
+    font-size: 13px
+    max-width: 160px
+    margin-bottom: 5px
+  .head_icon a
+    cursor: pointer
+
+.under_head
+  height: 1100px
+  margin-top: -125px
+  @media screen and (max-width: 990px)
+    margin-top: -215px
+  @media screen and (max-width: 480px)
+    height: 945px
+  .content-under_head
+    height: inherit
+    background: url("../img/header_back.png") no-repeat
+    background-position: center 0px
+    @media screen and (max-width: 480px)
+      background: url(../img/mobile-adaptive/back_header.png) 0px 90px no-repeat
+      background-size: 100%
+      padding: 0 30px
+
+    .under_head_title
+      position: absolute
+      top: 500px
+      max-width: 333px
+      left: 21%
+      font-family: "Calibri"
+      font-size: 17px
+      color: #2d384b
+      margin: 0
+      @media screen and (max-width: 990px)
+        top: 380px
+        left: 30px
+      @media screen and (max-width: 480px)
+        top: 480px
+    .under_head_weather
+      position: absolute
+      top: 545px
+      left: 21%
+      .meteo_widget
+        @media screen and (max-width: 480px)
+          width: 100% !important
+      @media screen and (max-width: 990px)
+        top: 430px
+        left: 30px
+      @media screen and (max-width: 480px)
+        top: 530px
+        width: 100%
+    .under_slider
+      position: absolute
+      top: 660px
+      left: 21%
+      outline: none
+      max-width: 274px
+      @media screen and (max-width: 990px)
+        top: 550px
+        left: 30px
+      @media screen and (max-width: 480px)
+        top: 650px
+        left: 0
+        right: 0
+        margin: auto
+      .slick-dots
+        bottom: -37px
+        width: 77%
+        @media screen and (max-width: 480px)
+          bottom: -40px
+          width: 78%
+          left: 0
+          right: 0
+          margin: auto
+        li
+          margin: 0px 0px
+          button:before
+            content: none
+          button
+            background: #2d384b
+            border-radius: 50%
+            width: 8px
+            height: 8px
+            padding: 0
+        li.slick-active button
+          background: #35a8f0
+
+      .item_slid
+        width: 276px !important
+        outline: none
+        &:first-child
+          .slid_btn
+            font-size: 11.58px
+        .slid_title
+          font-family: "Calibri"
+          font-size: 16px
+          max-width: 300px
+          color: #2d384b
+        .slid_btn
+          display: block
+          width: 197px
+          border: 2px solid #2d384b
+          text-align: center
+          padding: 12px 0px
+          text-transform: uppercase
+          font-size: 12.58px
+          font-weight: normal
+          background: transparent
+          outline: none
+          margin-top: 20px
+          cursor: pointer
+          @media screen and (max-width: 480px)
+            margin: 20px auto 0
+    .img_head_title
+      img
+        width: 35%
+        top: 25%
+        position: absolute
+        left: 21%
+        @media screen and (max-width: 480px)
+          width: 79%
+          top: 21%
+          left: 10%
+        @media screen and (max-width: 320px)
+          top: 15%
+.meteo_widget
+  margin: 12px 0px!important
+  height: 85px!important
+  max-width: 82%
+
+
+.meteo_widget #meteo_widget_i div:nth-of-type(1), .meteo_widget #meteo_widget_i div:nth-of-type(3)
+  display: none
+
+.meteo_widget #meteo_widget_i div:nth-of-type(2)
+  padding: 10px 0px!important
+
+
+.meteo_widget #meteo_widget_i div:nth-of-type(2) div
+  display: block
+  padding-top: 0px!important
+
+.about_mount
+  background-image: url('img/about_back.png')
+  background-size: 100%
+  height: 1276px
+  @media screen and (max-width: 990px)
+    height: 800px
+  @media screen and (max-width: 480px)
+    height: 1532px
+    background-size: cover
+    background-position: -903px -76px
+
+.about_content
+  padding-top: 100px
+  .about_img_title
+    margin-bottom: 93px
+    @media (max-width: 480px)
+      margin: 0 30px 93px
+    img
+      display: block
+      margin: auto
+      @media screen and (max-width: 480px)
+        width: 100%
+  .about_sub
+    max-width: 1200px
+    font-family: "Calibri"
+    font-size: 17px
+    color: #2d384b
+    margin: 0 auto 87px
+    letter-spacing: -0.5px
+    line-height: 26px
+  @media screen and (max-width: 1200px)
+    .about_sub
+      padding: 0 24px
+  button
+    display: block
+    width: 270px
+    height: 60px
+    margin: auto
+    background: transparent
+    border-bottom: 2px solid #0099f9
+    border-top: 2px solid #22447f
+    border-left: 2px solid #116ebb
+    border-right: 2px solid #116ebb
+    cursor: pointer
+    color: #0099f9
+    span
+      font-size: 17.14px
+      font-family: "Calibri"
+      text-transform: uppercase
+      position: relative
+      background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      &:after
+        content: ''
+        position: absolute
+        width: 9px
+        height: 15px
+        background: url("../img/icon-video.png") no-repeat
+        top: 3px
+        left: 162px
+
+.modal_video
+  position: fixed
+  width: 100%
+  height: 100%
+  left: 0
+  right: 0
+  margin: auto
+  top: 0
+  bottom: 0
+  background: rgba(236, 242, 246, 0.9)
+  outline: none
+  display: none
+  .close_btn
+    width: 24px
+    height: 24px
+    right: 20px
+    position: absolute
+    top: 20px
+    cursor: pointer
+  .video-slider
+    width: 83%
+    height: 30%
+    margin: auto
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    outline: none
+    @media screen and (max-width: 480px)
+      width: 75%
+    .video_block
+      margin: 0 8px
+      outline: none
+      a
+        outline: none
+        img
+          width: 100%
+          height: 100%
+          outline: none
+
+.prev_btn_video
+  background: url("../img/prev_btn.png") no-repeat
+  position: absolute
+  width: 30px
+  height: 54px
+  left: -4%
+  top: 36%
+
+.prev_btn_video.slick-disabled
+  background: url("../img/prev-disabletd.png") no-repeat
+
+
+.next_btn_video
+  background: url("../img/next_btn.png") no-repeat
+  position: absolute
+  width: 30px
+  height: 54px
+  right: -4%
+  top: 36%
+
+.next_btn_video.slick-disabled
+  background: url("../img/next-disabletd.png") no-repeat
+
+@media screen and (max-width: 1200px)
+  .prev_btn_video
+    top: 31%
+  .next_btn_video
+    top: 31%
+@media screen and (max-width: 1024px)
+  .prev_btn_video
+    left: -6%
+    top: 25%
+  .next_btn_video
+    right: -6%
+    top: 25%
+@media screen and (max-width: 990px)
+  .prev_btn_video
+    left: -6%
+    top: 9%
+  .next_btn_video
+    right: -6%
+    top: 9%
+@media screen and (max-width: 480px)
+  .prev_btn_video, .prev_btn_video.slick-disabled
+    left: -10%
+    top: 54%
+  .next_btn_video
+    right: -10%
+    top: 54%
+  .next_btn_video.slick-disabled
+    right: -10%
+    top: 54%
+@media screen and (max-width: 320px)
+  .prev_btn_video, .prev_btn_video.slick-disabled
+    left: -13%
+    top: 30%
+  .next_btn_video
+    right: -13%
+    top: 30%
+  .next_btn_video.slick-disabled
+    right: -13%
+    top: 30%
+
+
+.video-iframe#video6, .video-iframe#video7, .video-iframe#video8, .video-iframe#video9,
+.video-iframe#video10
+  height: 100%
+  width: 100%
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  position: fixed
+  display: none
+  background: rgba(0, 0, 0, 0.5)
+  .close_btn_iframe
+    z-index: 1
+    cursor: pointer
+    position: relative
+    top: 15%
+    left: 79%
+    width: 24px
+    height: 24px
+  iframe
+    width: 62%
+    height: 60vh
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+
+.photos_block
+  height: 415px
+  @media screen and (max-width: 990px)
+    height: 260px
+  @media screen and (max-width: 480px)
+    height: 245px
+
+
+.photo_item
+  position: relative
+  outline: none
+.photo_item.slick-slide
+  height: 30vh
+  @media screen and (max-width: 480px)
+    height: auto
+
+.photos_block
+  .slick-slide img
+     width: 100%
+
+
+.photo_item:hover::before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0, 153, 249, 0.7)
+  z-index: 1
+  cursor: pointer
+  @media (max-width: 990px)
+    display: none
+
+
+.photo_item:hover
+  background-color: rgba(0, 153, 249, 0.5)
+  @media (max-width: 990px)
+    background: none
+  
+
+.zoom_button
+  display: none
+  position: absolute
+  margin: 0px auto
+  left: 0px
+  right: 0
+  top: 34%
+  height: 100%
+  font-size: 25px
+  color: #ffff
+  text-transform: uppercase
+  z-index: 2
+  cursor: pointer
+  
+
+
+.photo_item:hover .zoom_button
+  display: block
+  @media (max-width: 990px)
+    display: none
+
+
+.zoom_icon
+  margin: 0 auto
+  display: block
+  padding-bottom: 14px
+  border-bottom: 3px solid #ffff
+
+
+.zoom_text
+  text-align: center
+  margin-top: 10px
+
+.modal_window_photo
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: rgba(230, 236, 240, 0.8)
+  display: none
+  .photo_window_slider
+    position: fixed
+    margin: auto
+    width: 50%
+    top: 10%
+    bottom: 0
+    left: 0
+    right: 0
+    @media screen and (max-width: 990px)
+      width: 65%
+      top: 26%
+    @media screen and (max-width: 430px)
+      width: 78%
+    .close_btn_photo
+      width: 24px
+      height: 24px
+      cursor: pointer
+      position: absolute
+      top: -6%
+      left: 97%
+
+    .js-slick-photo
+      box-shadow: 0 8px 32.01px 0.99px rgba(54, 168, 240, 0.55)
+
+      .js-photo-item
+        width: 100%
+        height: auto
+
+        img
+          display: block
+          margin: auto
+          width: 100%
+
+.prev_btn_photo
+  background: url("../img/prev_btn.png") no-repeat
+  position: absolute
+  width: 30px
+  height: 54px
+  left: -10%
+  top: 44%
+  cursor: pointer
+  background-size: 100%
+  @media screen and (max-width: 480px)
+    width: 20px
+    left: -11%
+    top: 40%
+
+.next_btn_photo
+  background: url("../img/next_btn.png") no-repeat
+  position: absolute
+  width: 30px
+  height: 54px
+  right: -10%
+  top: 44%
+  cursor: pointer
+  background-size: 100%
+  @media screen and (max-width: 480px)
+    width: 20px
+    right: -11%
+    top: 40%
+
+.winter_sports
+  .winter_sports_content
+    padding: 122px 0 247px 0
+    background: url("../img/winter_sports_back.png") no-repeat
+    background-size: cover
+    @media screen and (max-width: 990px)
+      padding-top: 0
+    @media screen and (max-width: 480px)
+      padding-top: 190px
+      background-position: -872px 27px
+    .h_vector
+      display: flex
+      align-items: center
+      width: 63%
+      margin: 0px auto 100px
+      img
+        display: inline-block
+        width: 100%
+      @media screen and (max-width: 1026px)
+        margin-left: 13%
+      @media (max-width: 990px)
+        margin: 0 auto 25px
+        width: 50%
+      @media (max-width: 480px)
+        width: 74%
+
+    .winter_sport_text
+      max-width: 1372px
+      font-family: "Calibri"
+      font-size: 17.92px
+      margin: auto
+      line-height: 27px
+      letter-spacing: -0.5px
+      color: #2d384b
+      padding: 0 24px
+      span
+        font-weight: bold
+    .winter_footer_text
+      max-width: 1310px
+      font-family: "Calibri"
+      font-size: 17.92px
+      margin: auto
+      line-height: 27px
+      letter-spacing: -0.5px
+      color: #2d384b
+      padding: 0 24px
+      @media screen and (max-width: 480px)
+        display: none
+
+    .winter_btn
+      margin-top: 20px
+      @media screen and (max-width: 480px)
+        display: none
+      #winter_btn
+        display: block
+        width: 270px
+        height: 60px
+        margin: auto
+        background: transparent
+        border-bottom: 2px solid #0099f9
+        border-top: 2px solid #22447f
+        border-left: 2px solid #116ebb
+        border-right: 2px solid #116ebb
+        cursor: pointer
+        span
+          color: #0099f9
+          font-size: 17.14px
+          font-family: "Calibri"
+          text-transform: uppercase
+          font-weight: bold
+          background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%)
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+
+.blog
+  max-height: 763px
+
+
+.blog .slick-dots
+  bottom: 57px!important
+
+
+.blog .slick-dotted.slick-slider
+  margin-bottom: 0px!important
+
+
+.center_blog
+  max-width: 1200px
+  margin: 0px auto
+  color: #2d384b
+  @media screen and (max-width: 1026px)
+    padding: 0 30px
+  a
+    text-decoration: none
+    
+.center_blog .text_blog
+  font-family: "Calibri"
+  padding: 35px 0px 25px 0px
+  margin: 0px
+  font-size: 95.83px
+  letter-spacing: 17px
+  font-weight: 600
+  text-transform: uppercase
+  @media screen and (max-width: 480px)
+    font-size: 45.83px
+    text-align: left
+
+.center_blog
+  .h2-text
+    font-family: "Calibri"
+    letter-spacing: 12px
+    font-weight: 600
+    text-transform: uppercase
+    font-size: 54.17px
+    margin-bottom: 70px
+    @media screen and (max-width: 480px)
+      font-size: 35.17px
+      text-align: left
+.center_blog
+  .descr_blog_text
+    font-family: "Calibri"
+    font-size: 17.92px
+    color: #2d384b
+    line-height: 28px
+
+
+.center_blog a.button_more span
+  width: 250px
+  font-family: "Calibri"
+  font-size: 17.42px
+  text-transform: uppercase
+  color: #2d384b
+  font-weight: bold
+
+
+.center_blog a.button_more
+  display: block
+  width: 250px
+
+a.button_more span
+  display: block
+  width: 197px
+  border: 2px solid #2d384b
+  text-align: center
+  padding: 12px 0px
+
+.descr_blog_text
+  margin-bottom: 22px
+.blog_item
+  outline: none
+  &:first-child
+    @media screen and (max-width: 480px)
+      .text_blog
+        margin-top: 54%
+        margin-bottom: 20%
+        letter-spacing: 9px
+      background-position: -800px center !important
+    @media screen and (max-width: 320px)
+      background-position: -940px center !important
+      .text_blog
+        font-size: 16.83px
+        margin-bottom: 100%
+  &:nth-child(2)
+    @media (max-width: 990px)
+      background-position: -772px 13px!important
+    @media screen and (max-width: 480px)
+      background-position: -983px 13px!important
+      .center_blog
+        .text_blog
+          font-size: 40.64px !important
+          text-align: center !important
+      .descr_blog_text
+        text-align: center
+      a.button_more
+        margin: auto
+    @media screen and (max-width: 320px)
+      background-position: -1030px 13px!important
+      .center_blog
+        .text_blog
+          font-size: 20.64px
+
+  &:nth-child(3)
+    @media (max-width: 990px)
+      background-position: -814px -10px!important
+    @media (max-width: 480px)
+      background-position: -900px -10px!important
+    @media screen and (max-width: 320px)
+      .center_blog
+        .text_blog
+          font-size: 23.83px
+        .h2-text
+          font-size: 24.17px
+  &:nth-child(4)
+    .descr_blog_text
+      @media screen and (max-width: 480px)
+        text-align: left
+    @media screen and (max-width: 320px)
+      .center_blog
+        .text_blog
+          font-size: 23.83px
+        .h2-text
+          font-size: 24.17px
+
+
+.blog_item:last-child
+  .center_blog
+    text-align: center
+    .text_blog
+      padding-bottom: 0
+    .h2-text
+      @media screen and (max-width: 480px)
+        margin-bottom: 230px
+      @media screen and (max-width: 320px)
+        margin-bottom: 70px
+    a.button_more
+      margin: auto
+      @media screen and (max-width: 480px)
+        margin-left: 0
+  @media screen and (max-width: 480px)
+    background-position: -842px center !important
+  @media screen and (max-width: 320px)
+    background-position: -960px center !important
+
+.blog_slider
+  .slick-dots
+    li
+      width: 10px
+      button
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background: #2d384b
+      button:before
+        content: ''
+    li.slick-active button
+      background: #0099f9
+
+.block_scheme
+  padding: 50px 0 90px 0
+  background: url("../img/back_scheme.png") no-repeat
+  background-size: cover
+  .block_title_scheme
+    max-width: 580px
+    text-align: right
+    margin-left: auto
+    margin-right: 18%
+    @media screen and (max-width: 1026px)
+      margin-right: 3%
+  .img_scheme
+    img
+      display: block
+      margin: auto
+      width: 100%
+  @media screen and (max-width: 480px)
+    display: none
+
+.reviews
+  background-image: url('../img/reviews_back2.png')
+  background-repeat: no-repeat
+  background-position: center 0px
+  background-size: cover
+  width: 100%
+  height: 672px
+  @media screen and (max-width: 480px)
+    height: 1170px
+
+
+
+.reviews_wrapp
+  max-width: 1075px
+  margin: 0 auto
+  padding-top: 175px
+
+
+.reviews_block
+  background-color: rgba(53, 168, 240, 0.7)
+  height: 250px
+  @media (max-width: 990px)
+    height: 470px
+    margin: auto
+  @media screen and (max-width: 480px)
+    height: 700px
+  .slick-dots
+    bottom: 66px
+    li
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: #2d384b
+    li.slick-active
+      background: #0099f9
+    li button::before
+      content: ''
+      //width: 10px
+      //height: 10px
+      //border-radius: 50%
+      //background: #2d384b
+
+
+
+
+.reviews_content
+  max-width: 850px
+  margin: 0px auto
+  padding: 33px 0px
+  .right_text
+    .name_surname
+      font-family: "Calibri"
+      font-size: 17.95px
+      letter-spacing: 0.5px
+      span
+        border-bottom: 3px solid #ffffff
+        padding-bottom: 10px
+        font-weight: bold
+    p
+      margin-top: 40px
+      font-family: "Calibri"
+      font-size: 17.95px
+      letter-spacing: 0.8px
+      line-height: 27px
+      @media screen and (max-width: 480px)
+        padding: 0 30px
+
+
+.left_image
+  float: left
+  @media (max-width: 990px)
+    float: none
+    text-align: center
+
+
+.right_text
+  max-width: 600px
+  width: 100%
+  color: #fff
+  float: right
+  @media (max-width: 990px)
+    float: none
+    text-align: center
+    margin: auto
+
+
+.left_image img
+  border-radius: 50%
+  display: inline-block!important
+
+.prev_review
+  background: url("../img/prev_review.png") no-repeat
+  position: absolute
+  width: 30px
+  height: 54px
+  left: 2%
+  top: 38%
+  z-index: 1
+  @media (max-width: 990px)
+    top: 44%
+  @media screen and (max-width: 480px)
+    display: none!important
+
+.prev_review.slick-disabled
+  background: transparent
+.next_review
+  background: url("../img/next_review.png") no-repeat
+  position: absolute
+  width: 30px
+  height: 54px
+  right: 2%
+  top: 36%
+  @media (max-width: 990px)
+    top: 44%
+  @media screen and (max-width: 480px)
+    display: none !important
+
+.next_review.slick-disabled
+  background: transparent
+
+.path
+  background: url('../img/path_back.png') no-repeat
+  background-position: center -60px
+  background-size: 100%
+  //height: 1450px
+  @media screen and (max-width: 480px)
+    background-size: cover
+
+
+.path_wrapp
+  max-width: 1200px
+  margin: 0 auto
+  .h_vector
+    display: flex
+    width: auto
+    justify-content: center
+    align-content: center
+    margin-top: 45px
+
+
+.path_line
+  height: 148px
+  width: 60%
+  margin: 0 auto
+  margin-top: 107px
+  position: relative
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  @media (max-width: 990px)
+    width: 77%
+  @media (max-width: 480px)
+    width: 70%
+  @media (max-width: 320px)
+    display: none
+
+
+
+
+.path_line .line_item
+  position: absolute
+  height: 100%
+  width: 200px
+  @media screen and (max-width: 480px)
+    width: 80px
+
+
+.path_line .line_item span
+  position: absolute
+  left: 0
+  right: 0
+  text-align: center
+  font-size: 20.83px
+  font-weight: 600
+  letter-spacing: 5px
+  @media screen and (max-width: 480px)
+    font-size: 15.83px
+
+
+.path_line .line_icon
+  position: absolute
+  background-color: #0099f9
+  border-radius: 50%
+  width: 60px
+  height: 60px
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: 36px
+
+
+.path_line hr
+  position: relative
+  top: 50%
+  width: 98%
+  border-width: 2px
+  border-style: solid
+  border-color: #2d384b
+
+
+.path_by_car
+  max-width: 680px
+  margin: 0 auto
+  margin-top: 100px
+  @media (max-width: 990px)
+    max-width: 635px
+  @media (max-width: 480px)
+    max-width: 322px
+    .car_item
+      &:nth-child(2)
+        display: flex
+        flex-direction: row-reverse
+        .arrow3_icon
+          transform: rotate(90deg)
+      @media (max-width: 480px)
+        float: none
+        margin: 0 auto 35px
+        width: 240px
+
+
+.path_by_bus
+  max-width: 100%
+  margin: 28px auto 0
+
+
+@media screen and (max-width: 1026px)
+  .path_by_bus
+    max-width: 68%
+    position: relative
+@media screen and (max-width: 990px)
+  .path_by_bus
+    max-width: 84%
+
+@media screen and (max-width: 480px)
+  .path_by_bus
+    max-width: 322px
+    .bus_item
+      float: none
+      margin: 0 auto 35px
+      &:nth-child(2)
+        display: flex
+        .arrow3_icon
+          border-radius: 0
+          transform: rotate(90deg)
+
+
+
+.car_item, .bus_item
+  float: left
+  padding-right: 26px
+  @media (max-width: 990px)
+    padding-right: 0
+
+
+.bus_item
+  padding-right: 34px
+  @media (max-width: 990px)
+    padding-right: 0
+  &:nth-child(3)
+    @media screen and (max-width: 1026px)
+      padding-right: 0
+  &:nth-child(4)
+    @media screen and (max-width: 1026px)
+      position: absolute
+      top: 50%
+      right: 0
+      .bus_time
+        margin-bottom: 40px
+      .bus_km
+        padding-top: 34px
+      .arrow3_icon
+        transform: rotate(180deg)
+    @media screen and (max-width: 480px)
+      position: static
+      display: flex
+      margin-bottom: 0
+      .arrow3_icon
+        transform: rotate(90deg)
+
+
+.car_icon, .bus_icon
+  border-radius: 50%
+  width: 207px
+  height: 207px
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: 207px
+  margin: 0 auto
+
+
+.arrow3_icon
+  border-radius: 50%
+  width: 207px
+  height: 52px
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: 103px
+  margin-top: 13px
+
+
+.car_time, .car_km, .bus_time, .bus_km
+  font-size: 37.42px
+  font-weight: 600
+  text-align: center
+  letter-spacing: 0px
+  padding-top: 17px
+
+
+.car_text, .bus_text
+  max-width: 205px
+  color: #0099f9
+  font-size: 20.83px
+  font-weight: 600
+  letter-spacing: 5px
+  padding-top: 30px
+  text-align: center
+  margin: 0 auto
+
+
+.gps_and_map
+  margin-top: 110px
+  @media screen and (max-width: 1026px)
+    margin-top: 3%
+
+
+.gps_and_map_text
+  padding-bottom: 50px
+  color: #2d384b
+  @media screen and (max-width: 480px)
+    max-width: 300px
+    margin: auto
+
+
+.gps_code, .or_map, .gps_map
+  float: left
+
+
+.or_map
+  font-size: 37.39px
+  font-weight: 600
+  text-align: center
+  width: 30%
+
+
+.gps_and_map ul
+  padding: 0px
+  list-style: none
+  display: flex
+  flex-wrap: wrap
+  max-width: 100%
+  margin: 0px 70px
+  align-items: flex-end
+  @media (max-width: 990px)
+    margin: 0 10px
+  @media screen and (max-width: 480px)
+    display: block
+
+
+.gps_and_map ul li
+  text-align: center
+  margin: 0px 1px 1px 0px
+  flex: 1 50px
+  @media screen and (max-width: 480px)
+    display: block
+    &:first-child
+      margin-bottom: 45px
+.gps_and_map
+  button.button_more_blue
+    width: 250px
+    height: 50px
+    background: #0099f9
+    border: none
+    cursor: pointer
+    span
+      color: #FFFFFF
+      font-family: "Calibri"
+      text-transform: uppercase
+      font-size: 17.45px
+  button.button_more
+    width: 250px
+    height: 50px
+    background: transparent
+    border: 2px solid #2d384b
+    cursor: pointer
+    span
+      color: #2d384b
+      font-family: "Calibri"
+      text-transform: uppercase
+      font-size: 17.45px
+
+.modal_window_maps
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(230, 236, 240, 0.8)
+  display: none
+  .close_btn_map
+    position: absolute
+    width: 24px
+    height: 24px
+    cursor: pointer
+    top: 14%
+    right: 19%
+    @media screen and (max-width: 1026px)
+      top: 9%
+      right: 2%
+    @media screen and (max-width: 990px)
+      top: 3%
+      right: 4%
+  .map
+    max-width: 990px
+    height: 500px
+    margin: auto
+    margin-top: 10%
+    box-shadow: 0 8px 32.01px 0.99px rgba(54, 168, 240, 0.55)
+    @media screen and (max-width: 320px)
+      margin-top: 16%
+
+
+#map
+  max-width: 990px
+  height: 500px
+
+footer.footer
+  background: url('../img/footer_back.png') no-repeat
+  background-size: 100%
+  @media screen and (max-width: 1026px)
+    background: url(../img/footer_back.png) 0px 136px no-repeat
+    position: relative
+    background-size: 100%
+  @media screen and (max-width: 990px)
+    background: url(../img/footer_back.png) 0px 235px no-repeat
+    background-size: 100%
+  @media screen and (max-width: 480px)
+    background-size: cover
+    background-position: -540px 0px
+  @media screen and (max-width: 320px)
+    background-position: -650px 0px
+
+
+
+footer .footer_block
+  max-width: 712px
+  padding-top: 77px
+  margin-left: 350px
+  @media screen and (max-width: 1026px)
+    margin-left: 30px
+    margin-top: 15%
+  @media (max-width: 990px)
+    padding-top: 0
+    margin-top: 30%
+  @media (max-width: 480px)
+    margin-top: 15%
+
+
+footer .footer_logo
+  display: flex
+  align-items: center
+  float: left
+  @media screen and (max-width: 480px)
+    width: 220px
+    float: none
+  img
+    @media screen and (max-width: 480px)
+      display: block
+      width: 100%
+
+
+footer .footer_block .separator
+  margin-bottom: 0px
+
+
+footer .footer_contacts
+  min-width: 228px
+  float: right
+  @media screen and (max-width: 1026px)
+    position: absolute
+    right: 30px
+  @media screen and (max-width: 480px)
+    left: 30px
+    top: 27%
+
+footer .footer_contacts .info
+  max-width: 100%
+  width: 228px
+  margin-right: 0px
+  line-height: 20px
+  font-size: 17.92px
+  text-align: right
+  @media screen and (max-width: 480px)
+    text-align: left
+
+
+footer .footer_contacts .info .tel
+  font-size: 27.5px
+  color: #2d384b
+
+footer .footer_contacts .info .time
+  font-size: 17.92px
+  color: #2d384b
+
+footer .footer_contacts .info .social_block
+  margin-top: 10px
+  margin-bottom: 20px
+
+footer .footer_contacts .info .social_block img
+  width: 37px
+footer .footer_contacts .info .address
+  margin-bottom: 20px
+  color: #2d384b
+
+.to_top
+  padding-top: 30px
+  @media (max-width: 480px)
+    display: none
+a
+  text-decoration: none
+a.button_more.to_top
+  width: 244px
+
+
+a.button_more.to_top span
+  width: 224px
+  background-color: #f3f6f9
+  text-transform: uppercase
+  color: #2d384b
+  font-size: 17.45px
+
+.copyright
+  font-size: 12.5px
+  margin-top: 35px
+  display: flex
+  justify-content: space-between
+  color: #2d384b
+  @media screen and (max-width: 1026px)
+    margin-top: 175px
+  @media screen and (max-width: 990px)
+    margin-top: 263px
+  @media screen and (max-width: 480px)
+    padding-right: 30px
+
+
+.copyright .right
+  text-align: right
+  margin-left: auto
+
+.clearfix:after
+  content: ' '
+  display: block
+  clear: both
+  visibility: hidden
+  height: 0
+  line-height: 0
+  font-size: 0
+
+.hidden-lg
+  @media screen and (min-width: 991px)
+    display: none !important
+
+.hidden-md
+  @media screen and (max-width: 990px)
+    display: none !important
+
+.hidden-xs
+  @media screen and (min-width: 767px)
+    display: none !important
+
+.hidden-sm
+  @media screen and (max-width: 766px)
+    display: none !important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

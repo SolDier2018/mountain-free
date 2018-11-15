@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Calibri";
+    src: url("../fonts/Calibri-normal/CALIBRI.eot");
+    src: url("../fonts/Calibri-normal/CALIBRI.eot?iefix")format("embedded-opentype"),
+    url("../fonts/Calibri-normal/Calibri.woff") format("woff"),
+    url("../fonts/Calibri-normal/CALIBRI.TTF") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CalibriBold";
+    src: url("../fonts/Calibri-bold/CALIBRIB.eot");
+    src: url("../fonts/Calibri-bold/CALIBRIB.eot?iefix")format("embedded-opentype"),
+    url("../fonts/Calibri-bold/Calibri-Bold.woff") format("woff"),
+    url("../fonts/Calibri-bold/CALIBRIB.TTF") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "CalibriItalic";
+    src: url("../fonts/Calibri-itallic/CALIBRII.eot");
+    src: url("../fonts/Calibri-itallic/CALIBRII.eot?iefix")format("embedded-opentype"),
+    url("../fonts/Calibri-itallic/Calibri-Italic.woff") format("woff"),
+    url("../fonts/Calibri-itallic/CALIBRII.TTF") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Beachwood";
+    src: url("../fonts/Beachwood/Beachwood.eot");
+    src: url("../fonts/Beachwood/Beachwood.eot?iefix")format("embedded-opentype"),
+    url("../fonts/Beachwood/Beachwood.woff") format("woff"),
+    url("../fonts/Beachwood/Beachwood.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+

@@ -1,0 +1,330 @@
+.content-slider {
+    margin: 0 auto;
+    margin-top: 106px;
+    width: 100%;
+    height: 800px;
+    /*background-color: #f4f4f4;*/
+    overflow: hidden;
+    background: transparent;
+}
+
+.center {
+    /*max-width: 700px;*/
+    width: 100%;
+    height: 900px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.center .item-slide {
+    outline: none;
+    margin: 0 0.8%;
+    height: 800px;
+    width: 588px;
+    align-content: flex-end;
+    animation: trans-slider_down .4s linear;
+}
+
+@media (max-width: 480px) {
+    .center .item-slide .h1 {
+        padding: 0!important;
+    }
+    .center .item-slide.slide_two .h1 {
+        margin-left: 100px;
+    }
+    .center .item-slide.slide_two.slick-slide.slick-current.slick-center .h1 {
+        margin-left: 0px;
+    }
+}
+
+
+@keyframes trans-slider_up {
+    from {transform: translateY(231px)}
+    15% {transform: translateY(211px)}
+    30% {transform: translateY(190px)}
+    50% {transform: translateY(150px)}
+    70% {transform: translateY(75px)}
+    85% {transform: translateY(38px)}
+    to {transform: translateY(0px)}
+}
+
+@keyframes trans-slider_down {
+    from {transform: translateY(-231px)}
+    15% {transform: translateY(-211px)}
+    30% {transform: translateY(-190px)}
+    50% {transform: translateY(-150px)}
+    70% {transform: translateY(-75px)}
+    85% {transform: translateY(-38px)}
+    to {transform: translateY(0px)}
+}
+
+.center .item-slide .h1 {
+    font-family: "Calibri";
+    font-weight: bold;
+    font-size: 17.92px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: left !important;
+    padding: 20px;
+    color: #2d384b;
+    transition: .5s;
+}
+
+.center .item-slide .text-slide {
+    display: none;
+}
+
+@keyframes text_opacity {
+    from {display: block; opacity: 0;}
+    50% {display: block; opacity: 0.4;}
+    to {display: block; opacity: .8;}
+}
+
+.center .slick-current .text-slide {
+    display: block;
+    text-align: left;
+    max-width: 570px;
+    font-family: "Calibri";
+    font-size: 17.92px;
+    letter-spacing: -0.5px;
+    color: #2d384b;
+    line-height: 26px;
+    animation: text_opacity .5s linear;
+}
+
+@media screen and (max-width: 480px) {
+    .center .slick-current .text-slide {
+        max-width: 400px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .center .slick-current .text-slide {
+        max-width: 360px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .center .slick-current .text-slide {
+        max-width: 282px;
+    }
+}
+
+
+
+
+.center .slick-current .h1 {
+    font-size: 54.17px;
+    padding: 21px 0 33px 0;
+    letter-spacing: 10px;
+    text-align: center !important;
+}
+
+@media screen and (max-width: 480px) {
+    .center .slick-current .h1 {
+        font-size: 41.67px;
+        margin-top: 30px;
+    }
+}
+
+
+.center .item-slide img {
+    margin: auto;
+}
+.center .item-slide .h1 {
+    text-align: center;
+}
+
+.center .slide_one {
+    display: flex !important;
+    align-items: center;
+}
+
+@media screen and (max-width: 415px) {
+    .center .slide_one .h1 {
+        margin: 30px auto;
+    }
+}
+
+.center .slide_two {
+    display: flex !important;
+    align-items: center;
+}
+
+.center .slide_three {
+    display: flex !important;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.center .slick-current {
+    outline: none;
+    display: block !important;
+    align-content: flex-start;
+    animation: trans-slider_up .5s linear;
+}
+
+
+.center .slick-prev {
+    left: 40%;
+    z-index: 1;
+}
+
+.center .slick-next {
+    right: 40%;
+}
+
+.center .slick-list {
+    height: 1200px !important;
+}
+
+.prev {
+    position: absolute;
+    left: 24%;
+    top: 41.5%;
+    width: 30px;
+    height: 53px;
+    z-index: 100;
+    cursor: pointer;
+    background: url("../img/prev_btn.png") no-repeat;
+}
+/*.prev:after {*/
+    /*content: 'Сноуборд';*/
+    /*display: none;*/
+    /*width: auto;*/
+    /*font-size: 17.92px;*/
+    /*letter-spacing: 5px;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: bold;*/
+    /*position: absolute;*/
+    /*top: 25%;*/
+    /*left: 85%;*/
+/*}*/
+
+.next {
+    position: absolute;
+    right: 24%;
+    top: 41.5%;
+    cursor: pointer;
+    width: 30px;
+    height: 53px;
+    background: url("../img/next_btn.png") no-repeat;
+}
+
+/*.next:after {*/
+    /*content: 'Сноуборд';*/
+    /*display: none;*/
+    /*width: auto;*/
+    /*font-size: 17.92px;*/
+    /*letter-spacing: 5px;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: bold;*/
+    /*position: absolute;*/
+    /*top: 25%;*/
+    /*right: 85%;*/
+/*}*/
+
+
+.center .prev.slick-disabled {
+    position: absolute;
+    left: 24%;
+    top: 41.5%;
+    width: 30px;
+    height: 53px;
+    z-index: 1;
+    cursor: pointer;
+    background: url("../img/prev-disabletd.png") no-repeat;
+    opacity: 0;
+}
+
+.center .next.slick-disabled {
+    position: absolute;
+    right: 24%;
+    top: 41.5%;
+    z-index: 1;
+    cursor: pointer;
+    width: 30px;
+    height: 53px;
+    background: url("../img/next-disabletd.png") no-repeat;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1026px) {
+    .prev {
+        left: 5%;
+    }
+    .center .prev.slick-disabled {
+        left: 5%;
+    }
+    .next {
+        right: 5%;
+    }
+    .center .next.slick-disabled {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .prev {
+        top: 67.5%;
+    }
+    .center .prev.slick-disabled {
+        top: 67.5%;
+    }
+    .next {
+        top: 67.5%;
+    }
+    .center .next.slick-disabled {
+        top: 67.5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .prev, .center .prev.slick-disabled, .next, .center .next.slick-disabled {
+        top: 79.5%;
+    }
+}
+
+.class_right {
+    flex-direction: row-reverse;
+}
+
+.center .item-slide img {
+    filter: grayscale(.75);
+    transition: .5s;
+}
+
+@media screen and (max-width: 480px) {
+    .center .item-slide img {
+        width: 35%;
+    }
+}
+
+.center .slick-current img {
+    filter: grayscale(0);
+    transition: .5s;
+}
+
+@media screen and (max-width: 480px) {
+    .center .item-slide {
+        animation: none;
+    }
+    .center .slick-current .text-slide {
+        animation: none;
+        margin-top: 30px;
+    }
+    .center .slick-current {
+        animation: none;
+    }
+}
+
+.item-slide.slick-slide.slick-current.slick-center {
+    height: 650px;
+}
+
+
+
+
+
